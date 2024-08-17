@@ -5,6 +5,7 @@
 
 
 :root{
+    --bg-body-black: #2e2e2e;
     --bg-body: #dfdfdfe1;
     --bg-color-nav2: #9882ee;
     --bg-color-nav: #cdc1ff;
@@ -26,19 +27,18 @@
 }
 
 body{
-    background: var(--bg-body);
+    background: var(--bg-body-black);
 }
 
 header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: var(--bg-color-nav2);
+    background: linear-gradient(black, var(--pink));
     width: 100%;
     position: fixed;
     padding: 0 30px;
     height: 65px;
-    border-bottom: 1px solid white;
     z-index: 1;
 }
 
