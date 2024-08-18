@@ -8,10 +8,12 @@
     --bg-body: #dfdfdfe1;
     --bg-color-nav2: #9882ee;
     --bg-color-nav: #cdc1ff;
-    --violet: #5b3ce6;
+    --violet: #8a31ff;
     --pink: #a910d8;
     --electric-blue: #0e23dd;
     --white-text: #fff;
+
+    --bg-gradient: linear-gradient(var(--electric-blue), var(--violet), var(--pink));
 }
 
 *{
@@ -86,7 +88,7 @@ main{
     display: flex;
     justify-content: center;
     gap: 20px;
-    background: linear-gradient(var(--violet), var(--electric-blue), var(--pink));
+    background: var(--bg-gradient);
     padding: 20px;
     max-width: 1200px;
 }
@@ -138,7 +140,7 @@ main{
     flex-direction: column;
     justify-content: center;
     gap: 20px;
-    background: linear-gradient(var(--violet), var(--electric-blue), var(--pink));
+    background: var(--bg-gradient);
     padding: 20px;
     max-width: 1200px;
 }
