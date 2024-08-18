@@ -1,8 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Jost:ital,wght@0,100..900;1,100..900&family=Kalnia+Glaze:wght@100..700&family=Orbitron:wght@400..900&family=Rowdies:wght@300;400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Jost:ital,wght@0,100..900;1,100..900&family=Kalnia+Glaze:wght@100..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Orbitron:wght@400..900&family=Rowdies:wght@300;400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=DM+Serif+Display:ital@0;1&family=Jost:ital,wght@0,100..900;1,100..900&family=Kalnia+Glaze:wght@100..700&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rowdies:wght@300;400;700&display=swap');
-
-
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=DM+Serif+Display:ital@0;1&family=Jost:ital,wght@0,100..900;1,100..900&family=Kalnia+Glaze:wght@100..700&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rowdies:wght@300;400;700&display=swap');
 
 :root{
     --bg-body-black: #2e2e2e;
@@ -13,7 +12,6 @@
     --pink: #a910d8;
     --electric-blue: #0e23dd;
     --white-text: #fff;
-    
 }
 
 *{
@@ -98,13 +96,19 @@ main{
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-evenly;
+    
 }
 
 .hero-info h1{
-    color: var(--white-text);
     font-size: 50px;
     font-weight: 800;
     font-family: "Orbitron", sans-serif;
+    /*background: linear-gradient(black, var(--white-text) ,var(--pink));*/
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    
+    color: var(--white-text);
 }
 
 .hero-info p{
@@ -141,6 +145,7 @@ main{
 
 .description-container{
     display: flex;
+    flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
     padding: 10px;
@@ -194,6 +199,10 @@ main{
 
 @media (max-width: 576px) {
 
+    main{
+        padding: 5px;
+    }
+
     header{
         display: flex;
         /*height: 90px;*/
@@ -220,9 +229,7 @@ main{
         display: flex;
     }
 
-    main{
-        padding: 5px;
-    }
+    /* Hero */
 
     .hero{
         display: flex;
@@ -266,11 +273,7 @@ main{
         width: 50%;
     }
 
-
-
-
-
-
+    /* Info */
         
     .info{
         padding: 10px;
@@ -287,9 +290,6 @@ main{
         font-size: 14px;
         width: 100%;
     }
-
-
-
 
     .info h2{
         font-size: 25px;
