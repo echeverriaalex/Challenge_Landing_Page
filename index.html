@@ -4,6 +4,9 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="assets/style.css">
+        <link rel="stylesheet" href="assets/responsive.css">
+        <link rel="stylesheet" href="assets/animations.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="shortcut icon" href="assets/images/icon-electronic-arts.png" type="image/x-icon">
         <title>Challenge Landing Page</title>
     </head>
@@ -12,19 +15,21 @@
             <img class="logo" alt="logo" src="assets/images/icon-electronic-arts.png">
             <nav class="navbar">
                 <label for="menu-toggle" class="menu-label">
-                    <img src="assets/images/menu-icono1.png" alt="">
+                    <!-- <img src="assets/images/menu-icono1.png" alt=""> -->
+                    <i class="fa-solid fa-bars icon"></i>
                 </label>
                 <input type="checkbox" id="menu-toggle">
                 <ul class="navbar-list">
-                    <li> <a href="#">Home</a> </li>
+                    <li> <a href="#home">Home</a> </li>
                     <li> <a href="#aboutus">Games</a> </li>
-                    <li> <a href="#">Support</a> </li>
+                    <li> <a href="#products">Products</a> </li>
                     <li> <a href="#aboutus">About Us</a> </li>
+                    <li> <a href="#contact">Contact Us</a> </li>
                 </ul>
             </nav>
         </header>
         <main>
-            <section class="hero">
+            <section class="hero" id="home">
                 <div class="hero-info">
                     <h1 class="slogan">Enjoy the newest games</h1>
                     <p>
@@ -72,6 +77,62 @@
                     </div>
                 </div>
             </section>
+
+            <section id="products">
+                <h2>We are Electronic Arts</h2>
+                <div class="cards-container">
+                    <div class="card">
+                        <div class="img-container">
+                            <img src="./assets/images/products/cloud-gaming.png">
+                        </div>                        
+                        <h3>EA Play</h3>
+                        <p>
+                            It is a monthly payment service with which you can download and enjoy all the games in our catalog,
+                            with this service you do not have to buy any games, they are all available, enjoy them!
+                        </p>
+                    </div>
+                    <div class="card">
+                        <div class="img-container">
+                            <img src="./assets/images/products/cloud-storage.png">
+                        </div>
+                        <h3>Your progress in the cloud</h3>
+                        <p>
+                            Whether you purchase or purchase EA Play, your progress will be saved in real time and securely on our
+                            cloud, you just have to log in and that's it!
+                        </p>
+                    </div>
+                    <div class="card">
+                        <div class="img-container">
+                            <img src="./assets/images/products/play.png">
+                        </div>
+                        <h3>Play wherever you want</h3>
+                        <p>
+                            Our game catalog is compatible with all the latest generation devices. You play on Xbox, PlayStation,
+                            PC, Android or IOS? Electronic Arts is with you!
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact">
+                
+                <div>
+                    <ul class="social-networks">
+                        <li><a href="https://www.facebook.com/EA/"><i class="fa-brands fa-facebook networks"></i></a></li>
+                        <li><a href="https://x.com/EA_Espana"></a><i class="fa-brands fa-x-twitter networks"></i></li>
+                        <li><a href="https://www.youtube.com/EA"><i class="fa-brands fa-youtube networks"></i></a></li>
+                        <li><a href="https://www.instagram.com/ea"><i class="fa-brands fa-instagram networks"></i></a></li>
+                        <li><a href="https://www.twitch.tv/ea"><i class="fa-brands fa-twitch networks"></i></a></li>
+                    </ul>
+                </div>
+
+            </section>
+
+        
         </main>
+
+        <footer>
+            <img src="./assets/images/electronic-arts-seeklogo.png" alt="">
+        </footer>
     </body>
 </html>
