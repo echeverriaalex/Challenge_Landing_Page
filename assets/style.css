@@ -164,6 +164,7 @@ section{
 .container-button{
     display: flex;
     gap: 30px;
+    animation: fade 8s  linear;
 }
 
 .button{
@@ -225,19 +226,14 @@ section{
     justify-content: center;
     gap: 10px;
     width: 200px;
-    padding: 20px;
     border: 2px solid black;
-    border-radius: 20px;
+    border-radius: 10px;
 }
 
-.info-card h3{
-    color: var(--white-text);
-    text-align: center;
-}
 
 .info-card img{
     width: 100%;
-    border-radius: 20px;
+    border-radius: 10px;
 }
 
 #products{

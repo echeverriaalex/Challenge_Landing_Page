@@ -29,14 +29,15 @@
         display: none;
         position: absolute;
         top: 65px;
-        left: 5%;
-        right: 5%;
-        width: 90%;
+        left: 2%;
+        right: 2%;
+        width: 96%;
         flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
         gap: 10px;
-        background: linear-gradient(var(--pink), var(--violet));
+        /*background: linear-gradient(var(--pink), var(--violet));*/
+        background: var(--bg-black);
         padding: 10px 0;
         border-radius: 0px 0px 15px 15px;
         border: 2px solid black;
@@ -46,6 +47,7 @@
 
     #menu-toggle:checked + .navbar-list{
         display: flex;
+        animation: desplegar 1s ease-in-out;
     }
 
     /* Hero */
@@ -125,12 +127,6 @@
     .info-card{
         gap: 10px;
         width: 150px;
-        padding: 5px;
-    }
-
-    .info-card h3{
-        color: var(--white-text);
-        font-size: 14px;
     }
 
     .info-card img{
