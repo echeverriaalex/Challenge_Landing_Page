@@ -159,4 +159,25 @@
         width: 50%;
         height: 50%;
     }
+
+
+    /* Contact */
+
+    .info-empresa{
+        display: flex;
+        gap: 20px;
+
+        flex-direction: column;
+    }
+
+    .info-list{
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+    }
+    
+    .info-empresa img{
+        border-radius: 10px;
+        width: 100%;
+    }
 }
