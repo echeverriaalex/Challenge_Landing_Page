@@ -31,6 +31,11 @@
     /* border: 1px solid rgb(12, 197, 83); */
 }
 
+html{
+    scroll-behavior: smooth;
+    scroll-margin-top: 70px;
+}
+
 body{
     background: var(--bg-body-black);
 }
@@ -105,11 +110,8 @@ main{
 
 section{
     background: var(--bg-gradient);
-    /*margin-top: 70px;*/
     display: flex;
     justify-content: center;
-    gap: 20px;
-    background: var(--bg-gradient);
     padding: 20px;
     max-width: 1200px;
     border-radius: 10px;
@@ -125,7 +127,6 @@ section{
     background: var(--bg-gradient);
     padding: 20px;
     max-width: 1200px;
-    height: 600px;
 }
 
 .hero-info{
@@ -134,7 +135,7 @@ section{
     align-items: flex-start;
     justify-content: space-evenly;
     gap: 30px;
-    width: 35%;
+    width: 40%;
 }
 
 .hero-info h1{
@@ -151,7 +152,7 @@ section{
 
 .hero img{
     animation: fade 4s linear;
-    width: 65%;
+    width: 60%;
     border-radius: 20px;
 }
 
@@ -169,7 +170,7 @@ section{
 
 .button{
     border: 2px solid black;
-    padding: 20px;
+    padding: 15px;
     border-radius: 20px;
     background: #201ddf;
     color: var(--white-text);
@@ -265,9 +266,9 @@ section{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 30px;
     border: 2px solid black;
-    padding: 20px;
+    padding: 10px;
     border-radius: 15px;
     /* background: linear-gradient(#1e201f, #3329cc, #800380);*/
     width: 35%;
@@ -299,14 +300,73 @@ section{
 }
 
 
+/* Contact */
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    background: var(--bg-gradient);
+    padding: 20px;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.contact h2{
+    text-align: center;
+    color: var(--white-text);
+    font-size: 30px;
+    font-weight: 800;
+    font-family: "Orbitron", sans-serif;
+}
+
+
+.info-empresa{
+    display: flex;
+    gap: 20px;
+}
+
+.info-list{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    
+}
+
+.info-item{
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+    color: white;
+}
+
+.info-item i, .info-item p{
+    color: white;
+}
+
+.container-lists{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+
 .social-networks{
     display: flex;
     justify-content: space-evenly;
-    gap: 30px;
+    gap: 20px;
 }
 
 .networks{
     font-size: 25px;
+    color: white;
+}
+
+.info-empresa img{
+    border-radius: 10px;
+    width: 60%;
 }
 
 
